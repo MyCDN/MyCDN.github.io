@@ -1,0 +1,55 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>{{ page.title }}</title>
+  <meta name="description" property="og:description" content="{{ page.description }}" >
+  <meta property="fb:app_id" content="116735365189212" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{ page.url }}" />
+  <meta property="og:title" content="{{ page.title }}" />
+  <link rel="stylesheet" href="//MyCDN.github.io/main.css" type="text/css" />
+</head>
+  <body>
+    <div id="wrap">
+    {% include topbar.html %}
+    <div id="header">
+        <div class="wrap">
+            <div id="title-area">
+    <h1 id="title"><a href='/' title="luySec Miscellaneous">luySec Miscellaneous</a></h1>
+    <p id="description">luySec Nothing short of your Miscellaneous</p>
+            </div>
+    <center><div class="widget-area">
+            <div id="text-3" class="widget widget_text">
+    <div class="widget-wrap"><div class="textwidget">
+    {% include ad.html %}</div></div>
+    </div>
+    </div><center>
+        </div>
+    </div>
+    <div id="content-sidebar-wrap">
+    <div id='content'>
+    {% for post in site.posts offset: 0 limit: 5 %}
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    {{ post.content | strip_html | truncatewords: 100 }}
+    {% endfor %}
+    </div>
+    <div id="sidebar" class="sidebar widget-area">
+    <div class="fb-login-button" data-scope="publish_actions,user_actions.news"></div>
+    <div class="widget"><div class="widget-area">{% include side1.html %}</div></div>
+    <div class="widget"><div class="widget-area">{% include sad.html %}</div></div>
+    </div>
+    </div>
+    <div id="footer" class="footer">
+      <div class="wrap">
+        <div class="gototop">
+          <p><a href="#wrap" rel="nofollow">Return to top of page</a></p>
+        </div>
+        <div class="creds">
+          <p>Copyright © 2013<a href="/" title="luySec Theme"><a href="/" title="luySec Home">luySec</a></p>
+          </div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
