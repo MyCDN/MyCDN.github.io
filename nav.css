@@ -1,0 +1,349 @@
+/***** TBar ********************/
+
+#tbar {
+  background: #3E3E3E;
+	width: 100%; 
+	height: 30px;
+	margin: 0 auto 0;
+	}
+
+#tbar li ul {
+	float: left;
+	list-style: none;
+	}
+
+#tbar li a {
+	background: none;
+	border: none;
+	color: #fffff;
+	display: inline;
+	text-decoration: none;
+}
+
+#tbar li a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+	
+/***** TopNav ********************/
+
+#subnav {
+	background-color: #222;
+	color: #fff;
+	clear: both;
+	overflow: hidden;
+  width: 100%;
+}
+
+#subnav ul {
+	float: left;
+	width: 100%;
+}
+
+#subnav li {
+	float: left;
+	list-style-type: none;
+}
+
+#subnav li a {
+	color: #ddd;
+	display: block;
+	font-size: 13px;
+	padding: 6px 15px 5px;
+	position: relative;
+	text-decoration: none;
+}
+
+#subnav li a:hover,
+#subnav li a:active,
+#subnav .current_page_item a,
+#subnav .current-cat a,
+#subnav .current-menu-item a {
+	background-color: #333;
+	color: #fff;
+}	
+
+#subnav li a .sf-sub-indicator {
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	text-indent: -9999px;
+}
+
+#subnav li li a,
+#subnav li li a:link,
+#subnav li li a:visited {
+	background-color: #333;
+	border: 1px solid #222;
+	border-top-width: 0;
+	color: #fff;
+	font-size: 11px;
+	padding: 5px 10px;
+	position: relative;
+	width: 128px;
+}
+
+#subnav li li a:hover,
+#subnav li li a:active {
+	background-color: #222;
+}
+
+#subnav li ul {
+	height: auto;
+	left: -9999px;
+	position: absolute;
+	width: 150px;
+	z-index: 9999;
+}
+
+#subnav li ul a { 
+	width: 130px;
+}
+
+#subnav li ul ul {
+	margin: -33px 0 0 149px;
+}
+
+#subnav li:hover>ul,
+#subnav li.sfHover ul {
+	left: auto;
+}
+	
+/***** Primary Navigation ********************/
+
+#nav {
+	background: #333333;
+	width: 960px;
+	color: #FFFFFF;
+	font-family: Arial, Tahoma, Verdana;
+	font-size: 11px;
+	font-weight: bold;
+	margin: 0 auto 3px;
+	text-transform: uppercase;
+	overflow: hidden;
+	clear: both;
+	}
+
+#nav ul {
+	width: 100%;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+	
+#nav li {
+	float: left;
+	list-style: none;
+	}
+	
+#nav li a {
+	color: #FFFFFF;
+	display: block;
+    margin: 0;
+	padding: 8px 15px 8px 15px;
+	text-decoration: none;
+	position: relative;	
+	border-right: 1px solid #666666;
+	}
+
+#nav li a:hover, #nav li a:active, #nav .current_page_item a, #nav .current-cat a, #nav .current-menu-item {
+	background: #444444;
+	}
+
+#nav li a .sf-sub-indicator {
+	background: none;
+	display: block;
+	width: 10px;
+	height: 10px;
+	text-indent: -9999px;
+	overflow: hidden;
+	position: absolute;
+	top: 14px;
+	right: 5px;
+	}
+	
+#nav li li a, #nav li li a:link, #nav li li a:visited {
+	background: #444444;
+	color: #FFFFFF;
+	width: 138px; 
+	margin: 0;
+	padding: 5px 10px 5px 10px;
+	text-transform: none;
+	border-left: 1px solid #999999;
+	border-right: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	position: relative;
+	}
+	
+#nav li li a:hover, #nav li li a:active {
+	background: #333333;
+	}
+
+#nav li li a .sf-sub-indicator {
+	background: none;
+	top: 10px;
+	}
+
+#nav li ul {
+	z-index: 9999;
+	position: absolute;
+	left: -999em;
+	height: auto;
+	width: 160px;
+	margin: 0 0 0 -1px;
+	padding: 0;
+	}
+
+#nav li ul a { 
+	width: 140px;
+	}
+
+#nav li ul ul {
+	margin: -31px 0 0 159px;
+	}
+
+#nav li:hover ul ul, #nav li:hover ul ul ul, #nav li.sfHover ul ul, #nav li.sfHover ul ul ul {
+	left: -999em;
+	}
+
+#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li.sfHover ul, #nav li li.sfHover ul, #nav li li li.sfHover ul {
+	left: auto;
+	}
+
+#nav li:hover, #nav li.sfHover { 
+	position: static;
+	}
+	
+/***** Primary Navigation Extras ********************/
+	
+#nav li.right {
+	float: right;
+	font-weight: bold;
+	margin: 0;
+	padding: 8px 15px 8px 0;
+	}
+
+#nav li.right a {
+	background: none;
+	color: #FFFFFF;
+	display: inline;
+	text-decoration: none;
+	border: none;
+	}
+	
+#nav li.right a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+	}
+
+#nav li.rss a {
+	background: url(images/rss.png) no-repeat left center;
+	margin: 0 0 0 10px;
+	padding: 3px 0 3px 16px;
+	}
+	
+#nav li.search {
+	padding: 3px 10px 0 10px;
+	}
+	
+#nav li.twitter a {
+	background: url(images/twitter-nav.png) no-repeat left center;
+	padding: 3px 0 1px 20px;
+	}
+	
+/***** Secondary Navigation ********************/
+
+#subnav3 {
+	background-color: #222;
+	color: #fff;
+	margin: 0 auto 0;
+	overflow: hidden;
+	width: 982px;
+}
+
+#subnav3 ul {
+	float: left;
+	width: 100%;
+}
+
+#subnav3 li {
+	float: left;
+	list-style-type: none;
+}
+
+#subnav3 li a {
+	color: #ddd;
+	display: block;
+	font-size: 13px;
+	padding: 6px 15px 5px;
+	position: relative;
+	text-decoration: none;
+}
+
+#subnav3 li a:hover,
+#subnav3 li a:active,
+#subnav3 .current_page_item a,
+#subnav3 .current-cat a,
+#subnav3 .current-menu-item a {
+	background-color: #333;
+	color: #fff;
+}	
+
+#subnav3 li a .sf-sub-indicator {
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	text-indent: -9999px;
+}
+
+#subnav3 li li a,
+#subnav3 li li a:link,
+#subnav3 li li a:visited {
+	background-color: #333;
+	border: 1px solid #222;
+	border-top-width: 0;
+	color: #fff;
+	font-size: 11px;
+	padding: 5px 10px;
+	position: relative;
+	width: 128px;
+}
+
+#subnav3 li li a:hover,
+#subnav3 li li a:active {
+	background-color: #222;
+}
+
+#subnav3 li ul {
+	height: auto;
+	left: -9999px;
+	position: absolute;
+	width: 150px;
+	z-index: 9999;
+}
+
+#subnav3 li ul a { 
+	width: 130px;
+}
+
+#subnav3 li ul ul {
+	margin: -33px 0 0 149px;
+}
+
+#subnav3 li:hover>ul,
+#subnav3 li.sfHover ul {
+	left: auto;
+}
+
+.navigation {margin:0 20px 0 0;text-align:center;color:#999;font-size:12px;clear:both;}
+.pagecount {display:inline; position:relative; top:4px;}
+.navigation div {width:150px;display:inline;}
+.navigation .alignright {text-align:right;}
+.navigation .alignleft {text-align:left;}
+.navigation a {font-size:16px;color:#555;background-image:url(images/btemplates.png?v=1.1);background-repeat:no-repeat;}
+.navigation .alignright a {padding:0 25px 0 0;background-position:117px -660px}
+.navigation .alignleft a {padding:0 0 0 25px;background-position:-245px -660px}
+.navigation a:hover {color:#1DB8EF;}
+.navigation .alignright a:hover {background-position:117px -640px}
+.navigation .alignleft a:hover {background-position:-245px -640px}
